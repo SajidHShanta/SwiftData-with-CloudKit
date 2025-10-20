@@ -31,7 +31,7 @@ struct UsersView: View {
                 
                 Spacer()
                 
-                Text(String(user.jobs.count))
+                Text(String(user.jobs?.count ?? 0))
                     .fontWeight(.black)
                     .padding(.horizontal, 10)
                     .padding(.vertical, 5)
@@ -50,8 +50,8 @@ struct UsersView: View {
         
         modelContext.insert(newUser)
         
-        newUser.jobs.append(job1)
-        newUser.jobs.append(job2)
+        newUser.jobs?.append(job1)
+        newUser.jobs?.append(job2)
     }
 }
 

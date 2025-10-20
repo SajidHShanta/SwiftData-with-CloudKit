@@ -10,10 +10,9 @@ import SwiftData
 
 @Model
 class Job {
-    var name: String
-    var priority: Int
-//    var owneer: User?
-    @Relationship(deleteRule: .cascade) var owneer: User? //deleteRule: .cascade means delete the job, if user deleted. by default which will not.
+    var name: String = "None"
+    var priority: Int = 1
+    var owneer: User?
     
     init(name: String, priority: Int, owneer: User? = nil) {
         self.name = name
@@ -21,3 +20,17 @@ class Job {
         self.owneer = owneer
     }
 }
+
+
+//@Model
+//class Job {
+//    var name: String
+//    var priority: Int
+//    var owneer: User?
+//
+//    init(name: String, priority: Int, owneer: User? = nil) {
+//        self.name = name
+//        self.priority = priority
+//        self.owneer = owneer
+//    }
+//}

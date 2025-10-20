@@ -20,10 +20,12 @@ struct SwiftDataWithCloudKitApp: App {
 
 
 /*
+ learned from
+ Paul Hudson
  
  1. Editing SwiftData model objects – SwiftDatam SwiftUI Tutorial 1/5 - https://youtu.be/jnW5m1qUINA
  2. Filtering @Query using #Predicate – SwiftData SwiftUI Tutorial 2/5 - https://youtu.be/bV5KnqMHXe0
  3. Dynamically sorting and filtering @Query with SwiftUI – SwiftData SwiftUI Tutorial 3/5 - https://youtu.be/gU1C3tI7MFk
  4. Relationships with SwiftData, SwiftUI, and @Query - https://youtu.be/n0HlwonH9v0
-
+ 5. Syncing SwiftData with CloudKit - https://youtu.be/i1X8B0tmyys
  */
